@@ -1,38 +1,276 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  color: #434343;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  font-family: "Red Rose", cursive;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  cursor: pointer;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar,
+.hero__content {
+  width: 90vw;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 20px;
+}
+
+.connect-btn {
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  color: white;
+  border: none;
+  font-family: "Red Rose", cursive;
+  font-size: 15px;
+  padding: 20px 35px;
+  border-radius: 10px;
+}
+
+.active {
+  height: 100vh;
+  width: 100vw;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgba(64, 64, 64, 0.3); /* Black fallback color */
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.null {
+  display: none;
+}
+
+.connect_popup {
+  width: 600px;
+  height: 326px;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 200px;
+}
+
+.popup__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  border-bottom: 2px solid #cfd8dc;
+}
+
+.close_btn {
+  background: none;
+  border: none;
+  padding: 0;
+}
+.close_btn img {
+  z-index: 1000;
+}
+
+.popup__preferred {
+  padding: 30px;
+}
+
+.popup__wallet_choice {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #f8f9fa;
+  border: 1px solid #cfd8dc;
+  padding: 5px 25px;
+  border-radius: 12px;
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+}
+
+.popup__wallet_choice span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup__wallet_choice h2 {
+  color: black;
+  margin-left: 10px;
+}
+
+.mm_popup_logo {
+  height: 40px;
+  width: auto;
+}
+
+.wc_popup_logo {
+  height: 35px;
+  width: auto;
+}
+
+/* End of Nav */
+
+/* Hero section */
+.hero {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero__content {
+  margin: 45px 0 11px 0;
+}
+
+.hero__bold_text {
+  font-size: 55px;
+}
+.bold_text_span {
+  color: #a02279;
+  font-weight: bold;
+}
+.hero__normal_text {
+  font-size: 23px;
+  margin-top: 45px;
+}
+.hero__input {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.hero__input input {
+  width: 400px;
+  padding: 15px;
+  font-family: "Red Rose", cursive;
+  border: 2px solid #cfd8dc;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.hero__input button {
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  border: none;
+  padding: 16.5px 100px;
+  color: white;
+  font-family: "Red Rose", cursive;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.hero__logos {
+  padding: 5px;
+  width: 100%;
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* End of Hero section */
+
+/* Inspiration section*/
+.inspiration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  margin-bottom: 50px;
+}
+.inspiration h1 {
+  color: black;
+  font-size: 50px;
+  margin: 50px 0;
+}
+
+.grid_items {
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-column-gap: 1.4%;
+  grid-row-gap: 20px;
+}
+
+.cards {
+  padding: 15px;
+  border: 1px solid #d7d7d7;
+  border-radius: 15px;
+}
+
+.cards__heading_img {
+  width: 100%;
+  height: auto;
+}
+
+.cards__info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: 7px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.stars {
+  margin-top: 7px;
+}
+.stars img {
+  margin-right: 7px;
+}
+
+/* End of Inpiration */
+
+/* NFTs section */
+
+.nfts {
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nfts__container {
+  width: 90vw;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nft__text {
+  color: white;
 }
