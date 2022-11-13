@@ -1,0 +1,156 @@
+/* Media Queries */
+@media screen and (max-width: 850px) {
+  /* Navbar */
+  .nav_logo {
+    width: 200px;
+    height: auto;
+  }
+  .navbar > .navlinks,
+  .navbar > button {
+    display: none;
+  }
+
+  .smaller_screen_toggle {
+    display: block;
+  }
+
+  .menuActive {
+    height: 100vh;
+    width: 100vw;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: white;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .menuUnactive {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: -100vw;
+    top: 0;
+    background-color: white;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .menuActive .close_btn img {
+    height: 25px;
+    width: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 40px;
+  }
+
+  .smaller_screen_toggle .navlinks ul {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+  }
+
+  .smaller_screen_toggle .navlinks ul li {
+    margin: 20px;
+  }
+
+  /* End of Nav Bar */
+
+  /* Hero */
+  .hero__bold_text {
+    font-size: 30px;
+  }
+  .hero__normal_text {
+    font-size: 15px;
+    margin-top: 25px;
+  }
+
+  .hero__input {
+    margin-top: 20px;
+  }
+
+  .hero__input input {
+    width: 220px;
+    padding: 5px;
+    font-size: 13px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+
+  .hero__input button {
+    padding: 0;
+    width: 90px;
+    height: 30px;
+    font-size: 13px;
+  }
+
+  .hero__images img {
+    height: 250px;
+    width: auto;
+  }
+
+  .hero__logos img {
+    width: 150px;
+    height: auto;
+  }
+
+  /* End of Hero */
+
+  /* Inspiration */
+
+  .inspiration h1 {
+    font-size: 33px;
+    margin: 50px 0;
+  }
+
+  .grid_items {
+    grid-template-columns: 0.6fr 0.6fr;
+    grid-column-gap: 10%;
+    place-items: center;
+  }
+
+  .cards {
+    place-self: center;
+  }
+
+  /* End of Inpiration */
+
+  /* NFTs */
+
+  .nft__text h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .nft__text p {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .nft__text button {
+    padding: 10px 20px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+
+  .nft__image img {
+    height: 230px;
+    width: auto;
+  }
+
+  /* End of NFTs */
+
+  /* Place to stay */
+  .placeChoice_filter p {
+    display: none;
+  }
+}

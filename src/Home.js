@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import NFTs from "./NFTs";
 import Inspiration from "./Inspiration";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <Hero />
       <Inspiration />
       <NFTs />
+      <Footer />
     </div>
   );
 }
