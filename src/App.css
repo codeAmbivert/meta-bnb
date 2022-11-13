@@ -336,9 +336,11 @@ button:hover {
 
 .all_about_company {
   width: 100%;
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: space-between;
+  grid-template-columns: 35% 20% 20% 20%;
+  gap: 1em;
 }
 .footer__logos > img {
   margin-bottom: 60px;

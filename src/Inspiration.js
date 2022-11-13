@@ -24,7 +24,7 @@ function Inspiration() {
             alt2={"img2"}
             key={i}
           />
-        ))} 
+        ))}
       </div>
     </div>
   );

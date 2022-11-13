@@ -1,4 +1,5 @@
 /* Media Queries */
+
 @media screen and (max-width: 850px) {
   /* Navbar */
   .nav_logo {
@@ -115,11 +116,8 @@
   .grid_items {
     grid-template-columns: 0.6fr 0.6fr;
     grid-column-gap: 10%;
-    place-items: center;
-  }
-
-  .cards {
-    place-self: center;
+    justify-content: center;
+    align-items: center;
   }
 
   /* End of Inpiration */
@@ -152,5 +150,79 @@
   /* Place to stay */
   .placeChoice_filter p {
     display: none;
+  }
+
+  /* Footer */
+  .all_about_company {
+    grid-template-columns: 35% 20% 20% 20%;
+    gap: 1em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* Navbar */
+  .nav_logo {
+    width: 150px;
+    height: auto;
+  }
+
+  .hamburger_toogle_icon img {
+    height: 25px;
+    width: auto;
+  }
+
+  /* Hero */
+  .hero__bold_text br {
+    display: none;
+  }
+  .hero__normal_text br {
+    display: none;
+  }
+
+  .hero__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .hero__input input {
+    width: 170px;
+  }
+
+  .hero__images {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero__logos img {
+    width: 80px;
+    height: auto;
+  }
+
+  /* Inspiration */
+  .inspiration h1 {
+    font-size: 25px;
+    margin: 50px 0;
+    text-align: center;
+  }
+
+  .grid_items {
+    grid-template-columns: 0.7fr;
+    grid-column-gap: 20%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* NFTs */
+  .nfts__container {
+    flex-direction: column-reverse;
+  }
+
+  /* Footer */
+  .footer__logos {
+    grid-column: 1/5;
   }
 }
