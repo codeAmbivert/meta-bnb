@@ -154,8 +154,14 @@
 
   /* Footer */
   .all_about_company {
-    grid-template-columns: 35% 20% 20% 20%;
+    grid-template-columns: 40% 60%;
     gap: 1em;
+  }
+  .footer__about,
+  .footer__place,
+  .footer__community {
+    display: inline-block;
+    margin: 0 10px;
   }
 }
 
@@ -210,7 +216,7 @@
   }
 
   .grid_items {
-    grid-template-columns: 0.7fr;
+    grid-template-columns: 0.9fr;
     grid-column-gap: 20%;
     justify-content: center;
     align-items: center;
@@ -222,7 +228,22 @@
   }
 
   /* Footer */
-  .footer__logos {
-    grid-column: 1/5;
+  .footer__content {
+    justify-content: center;
+    align-items: center;
   }
+  .all_about_company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .all_about_company > div {
+    display: inline-block;
+  }
+
+  /* .footer__logos {
+    grid-column: 1/5;
+  } */
 }
