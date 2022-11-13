@@ -157,12 +157,6 @@
     grid-template-columns: 40% 60%;
     gap: 1em;
   }
-  .footer__about,
-  .footer__place,
-  .footer__community {
-    display: inline-block;
-    margin: 0 10px;
-  }
 }
 
 @media screen and (max-width: 450px) {
@@ -232,18 +226,20 @@
     justify-content: center;
     align-items: center;
   }
-  .all_about_company {
+
+  .footer__links {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__logos {
+    grid-column: 1/5;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-left: -60px;
   }
-
-  .all_about_company > div {
-    display: inline-block;
-  }
-
-  /* .footer__logos {
-    grid-column: 1/5;
-  } */
 }

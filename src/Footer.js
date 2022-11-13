@@ -24,7 +24,7 @@ function Footer() {
               </Link>
             </div>
           </div>
-          <div>
+          <div className="footer__links">
             <div className="footer__community" id="community">
               <div className="_header">Community</div>
               <p>NFT</p>

@@ -347,9 +347,17 @@ button:hover {
 }
 .social_logos {
   width: 150px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer__about,
+.footer__place,
+.footer__community {
+  display: inline-block;
+  margin: 10px;
 }
 
 ._header {
