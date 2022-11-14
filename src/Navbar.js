@@ -69,13 +69,25 @@ function Navbar() {
           </button>
           <div className="navlinks">
             <ul>
-              <li>
+              <li
+                onClick={() => {
+                  setToggleState(false);
+                }}
+              >
                 <Link to="/">Home</Link>
               </li>
-              <li>
+              <li
+                onClick={() => {
+                  setToggleState(false);
+                }}
+              >
                 <Link to="/place_to_stay">Place to stay</Link>
               </li>
-              <li>
+              <li
+                onClick={() => {
+                  setToggleState(false);
+                }}
+              >
                 <a href="#nfts">NFTs</a>
               </li>
               <li>
@@ -93,7 +105,12 @@ function Navbar() {
           </button>
         </div>
       </div>
-      <div className={`${toggleClassCheck}`}>
+      <div
+        className={`${toggleClassCheck}`}
+        onClick={() => {
+          setBtnState(false);
+        }}
+      >
         <div className="connect_popup">
           <div className="popup__header">
             <h2>Connect Wallet</h2>
