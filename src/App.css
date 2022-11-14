@@ -336,11 +336,11 @@ button:hover {
 
 .all_about_company {
   width: 100%;
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  grid-template-columns: 35% 20% 20% 20%;
-  gap: 1em;
+  /* grid-template-columns: 1fr;
+  gap: 1em; */
 }
 .footer__logos > img {
   margin-bottom: 60px;
@@ -353,11 +353,17 @@ button:hover {
   align-items: center;
 }
 
-.footer__about,
+/* .footer__about,
 .footer__place,
 .footer__community {
   display: inline-block;
   margin: 10px;
+} */
+.footer__links {
+  width: 55vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 ._header {

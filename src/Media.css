@@ -151,12 +151,6 @@
   .placeChoice_filter p {
     display: none;
   }
-
-  /* Footer */
-  .all_about_company {
-    grid-template-columns: 40% 60%;
-    gap: 1em;
-  }
 }
 
 @media screen and (max-width: 450px) {
@@ -223,23 +217,23 @@
 
   /* Footer */
   .footer__content {
+    display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin-left: 50px;
   }
 
+  .all_about_company {
+    display: grid;
+  }
   .footer__links {
-    width: 80vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .footer__logos {
-    grid-column: 1/5;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin-left: -60px;
+  }
+
+  .footer__links > div {
+    margin-right: 20px;
   }
 }
