@@ -1,5 +1,43 @@
 /* Media Queries */
 
+@media screen and (max-width: 1250px) {
+  .hero__bold_text {
+    font-size: 40px;
+  }
+  .hero__normal_text {
+    font-size: 25px;
+    margin-top: 25px;
+  }
+
+  .hero__input {
+    margin-top: 20px;
+  }
+
+  .hero__input input {
+    width: 300px;
+    padding: 5px;
+    font-size: 13px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+
+  .hero__input button {
+    padding: 0;
+    width: 90px;
+    height: 30px;
+    font-size: 13px;
+  }
+  .hero__images img {
+    height: 350px;
+    width: auto;
+  }
+
+  .nft__image img {
+    height: 240px;
+    width: auto;
+  }
+}
+
 @media screen and (max-width: 850px) {
   /* Navbar */
   .nav_logo {
